@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Country Information Finder</h1>
+    </header>
+    <main>
+        <form id="country-form">
+            <label for="country-input">Enter a country name:</label>
+            <input type="text" id="country-input" placeholder="e.g., South Africa" required>
+            <button type="submit">Get Information</button>
+        </form>
+
+        <section id="country-info">
+            <h2>Country Information</h2>
+            <p><strong>Capital:</strong> <output id="capital">Not available</output></p>
+            <p><strong>Population:</strong> <output id="population">Not available</output></p>
+            <p><strong>Region:</strong> <output id="region">Not available</output></p>
+            <figure>
+                <figcaption><strong>Flag:</strong></figcaption>
+                <img id="flag" src="" alt="Country Flag">
+            </figure>
+        </section>
+
+        <section id="bordering-countries">
+            <h2>Bordering Countries</h2>
+            <ul id="bordering-countries-list"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

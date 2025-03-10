@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#country-info, #bordering-countries {
+    margin-top: 20px;
+}
+
+#flag {
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.bordering-country {
+    margin-bottom: 20px;
+}
+
+.bordering-country p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.bordering-country img {
+    display: block;
+    margin-top: 5px;
+}
