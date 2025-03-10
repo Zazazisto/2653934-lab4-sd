@@ -7,7 +7,7 @@ document.getElementById('country-form').addEventListener('submit', function (eve
         return;
     }
 
-    fetch(`https://restcountries.com/v3.1/name/${countryName}`)
+    fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Country not found. Please check the name and try again.');
@@ -31,10 +31,12 @@ document.getElementById('country-form').addEventListener('submit', function (eve
                         borderingCountries.forEach(borderingCountry => {
                             const li = document.createElement('li');
                             const flagImg = document.createElement('img');
+
                             flagImg.src = borderingCountry.flags.png;
                             flagImg.alt = `${borderingCountry.name.common} Flag`;
                             flagImg.style.width = '250px';
                             li.textContent = `${borderingCountry.name.common}:`;
+                            
                             li.appendChild(document.createElement('br'));
                             li.appendChild(flagImg);
                             borderingCountriesList.appendChild(li);
